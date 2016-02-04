@@ -1,0 +1,281 @@
+
+/* ==========================================================================
+   Main Navigation 
+   ========================================================================== */
+
+
+
+/* Logo
+   ========================================================================== */
+.logo-div {
+	float: left;
+  margin-left: .5em;
+}
+
+.logo-svg {
+  width: 150px;
+  height: 90px;
+}
+
+
+
+@include min-screen(62.5em) {
+  .logo-svg {
+    width: 150px;
+    height: 150px;
+  }
+	.logo-div { 
+    width: 15%; 
+    margin-left: 0;
+  }	
+}
+
+
+
+
+
+
+
+
+/* Main Nav
+   ========================================================================== */
+.main-nav { display: none; }
+
+.main-nav__ul a { color: $color-7; }
+
+
+.mobileNavModal {
+  opacity:0;
+  z-index:-3;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  position:fixed;
+  background-color: $color-1;
+  
+  transition: opacity .5s;
+  -webkit-transition: .5s; //Needed in this sequence if not transition doesn't happen on close!!!
+}
+
+.is-open-mobileNavModal {
+  opacity: 1;
+  z-index: 999;
+}
+
+.mobileNavModalContainer-outer {
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:999!important;
+  overflow-y:auto;
+  position:fixed;
+}
+
+.mobileNavModalContainer {
+  width:100%;
+  position:relative;
+  outline:0!important;
+  padding:2em;
+  padding-top: 4em;
+  margin: auto;
+  background-color: $color-1;
+}
+
+
+
+.mobileNavButton {
+  cursor:pointer;
+  background-color: $color-8;
+  border:0;
+  -webkit-appearance:none;
+  display:block;
+  outline:0;
+  padding:0;
+  padding-top:.1em;
+  padding-left:.1em;
+  box-shadow:none;
+  user-select:none;
+  width:44px;
+  height:44px;
+  line-height:44px;
+  position:absolute;
+  right: .5em;
+  top: .8em;
+  text-decoration:none;
+  font-style:normal;
+  font-size:20px;
+  color:inherit
+}
+
+.mobileNavButton__close {
+  top: .8em;
+  right: 5%;
+}
+
+@include min-screen(29.375em) {
+  .mobileNavButton__close { right: 4%; }
+}
+
+
+
+
+
+
+.main-nav__ul li { 
+  max-width:700px; 
+  margin: auto;
+}
+
+.main-nav__ul a {
+  display: block;
+  margin: .6em .3em .5em;
+  padding: 0 .09em;
+  text-decoration: none;
+  line-height: 1.5;
+  border-bottom: 2px solid transparent;
+}
+
+
+
+.mobileNav {
+  .main-nav__ul { text-align: center; }
+
+  
+
+  .main-nav__ul li + li { border-top: $color-7 1px dashed; }
+
+}
+
+
+
+
+
+
+@include min-screen(62.5em) {
+	.main-nav {
+    width: 80%; 
+		display: block;
+		float: left;
+    text-align: right;
+	}
+	.main-nav li { display: inline-block; }
+  
+  //Hiding 'Book a table' from main menu. There is a dedicated button from now on
+  .main-nav__ul li:last-child { display: none; }
+
+  .main-nav .current-menu-item a,
+  .main-nav a:hover,
+  .main-nav a:focus { border-bottom: 2px solid $color-7; }
+
+	.mobileNavButton,
+	.mobileNavModal { display: none; }
+
+  .nav-btnBookOnLine-div { 
+    width: 85%;
+    float: right; 
+    margin-top: 3.5em;
+  }
+}
+
+
+@include min-screen(71.875em) {
+  .logo-div { width: 25%; }
+  .logo-svg {
+    width: 200px;
+    height: 150px;
+  }
+  .nav-btnBookOnLine-div { width: 75%; }
+  .main-nav { width: 80%; }
+}
+
+
+@include min-screen(78.75em) {
+  .nav-btnBookOnLine-div,
+  .main-nav { width: auto; }
+  .main-nav__ul a  { margin: .6em .6em .5em; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Book A Table DropDown
+   ========================================================================== */
+.buttonBookingModal, 
+.bookingModal { display: none; } 
+
+
+@include min-screen(62.5em) {
+	.buttonBookingModal {
+		display: inline-block;
+		float: right;
+    margin: 0;
+	}
+
+
+
+	.bookingModal {
+	display: block;
+  opacity:0;
+  z-index:-3;
+  top:7.7em;
+  right:0;
+  width:38%;
+  height:0;
+  overflow:hidden;
+  background: $color-1 url('../../images/grunge-overlay.png') repeat top left;
+  
+  transition: opacity .5s;
+  // -webkit-transition: .5s; //Needed in this sequence if not transition doesn't happen on close!!!
+	}
+
+
+  .is-open-js-bookingModal {
+    opacity: 1;
+    z-index: 999;
+    position:fixed;
+    height:100%;
+  }
+
+  .bookingModalContainer-outer {
+    right:0;
+    width:40%;
+    height:100%;
+    z-index:999!important;
+    overflow-y:auto;
+    position:fixed;
+  }
+
+  .bookingModalContainer-outer {
+    width:100%;
+    position:relative;
+    outline:0!important;
+    padding:2em;
+    max-width:700px;
+    margin: auto;
+  }
+
+  .bookingModalContainer { min-height: 600px; }
+
+}
+
+
+@include min-screen(78.75em) {
+  .buttonBookingModal { margin: 0 0 0 2em; }
+}
+
+

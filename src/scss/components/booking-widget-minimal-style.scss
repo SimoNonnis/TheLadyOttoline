@@ -1,0 +1,132 @@
+
+/* ==========================================================================
+   Booking Widget with minimal style
+   ========================================================================== */
+
+
+/* Overriding OpenTable style
+   ========================================================================== */
+#OT_searchWrapperAll, 
+#OT_searchWrapperAll *, 
+#OT_searchWrapperAll *:before, 
+#OT_searchWrapperAll *:after {
+  box-sizing: border-box!important;
+}
+
+
+
+#OT_searchWrapperAll {
+	margin: auto!important;
+  padding: 0 12%!important;
+  position: absolute!important;
+  height: auto!important;
+  width: 100%!important;
+}
+
+#OT_searchWrapper { height: auto!important; }
+
+#OT_searchWrapper dl, 
+#OT_date { width: 100%!important; }
+
+
+
+
+#dateDisplay, .OT_feedTitle {
+	width: auto !important;
+	display: none !important;
+}
+
+#OT_defList dt {
+	text-align: left;
+	width: auto;
+	position: static;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+
+#OT_defList dd { position: static !important; }
+
+
+
+
+
+
+
+#OT_searchWrapperAll input[type="text"], 
+#OT_searchWrapperAll select, 
+#OT_searchWrapperAll option {
+	width: 100% !important;
+	margin: 0 0 1em!important;
+	height: 35px;
+	background: transparent;
+	padding: 7px;
+	border: 1px solid;
+	border-radius: 0;
+	-webkit-appearance: none;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+#OT_searchWrapperAll #OT_submitWrap {
+	position: relative !important;
+	display: inline-block;
+	margin: 0;
+	width: 188px;
+	top: 0;
+	left: 0;
+	margin-top: 1em;
+  height: 3.3em;
+}
+
+.btn--new-submit {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+
+	box-sizing: border-box;
+	text-align: center;
+	cursor: pointer;
+	z-index: 1;
+	display: block;
+	text-transform: uppercase;
+	padding: .5em 1.2em .5em;
+	background-color: white;
+	color: gray;
+	border-radius: 0;
+	border: 1px solid gray;
+  line-height: 13px;
+
+	transition: .25s ease-out;
+}
+
+
+
+
+
+/* Pop Up Window rendering below in the viewport -- Fix --
+   ========================================================================== */
+#TB_window {
+top: 4% !important;
+}
+
+
+
+/* Hide New iframe from openTable breaking layout
+   ========================================================================== */
+#cal1Shim {
+display: none !important;
+}
+
+
+
+

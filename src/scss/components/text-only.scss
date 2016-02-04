@@ -1,0 +1,17 @@
+
+/* ==========================================================================
+   Text Only
+   ========================================================================== */
+
+.copy-only-section { 
+	padding: 3em 1em; 
+	min-height: 300px;
+}
+.copy-only-section--skin { background-color: $color-6; }
+
+
+@include min-screen(28.125em) {
+	.copy-only-section {
+		padding: 3em 2em; 
+	}
+}

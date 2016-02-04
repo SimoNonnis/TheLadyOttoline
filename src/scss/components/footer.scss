@@ -1,0 +1,59 @@
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+.footer-nav {
+	padding: 2em 1.5em .5em 1.5em;
+	background-color: $color-6;
+}
+
+.footer-locations-section {
+	padding: 2em .5em 1em .5em;
+	background-color: $color-5;	
+}
+
+
+.footer-nav-menu { margin: 1em auto; }
+
+
+
+.footer-nav-menu a {
+	padding: 1em;
+	display: block; 
+}
+
+.location-logo-link {
+	margin: .5em;
+	opacity: .5;
+}
+
+
+
+
+
+@include min-screen(29.375em) {
+	.footer-nav-menu a {
+		padding: 1em;
+		display: inline-block; 
+	}
+}
+
+@include min-screen(62.5em) {
+	.footer-nav-menu a {
+		padding: .5em 2em;
+	}
+
+	.footer-nav-menu a:hover,
+	.ignite-credit a:hover { color: darken($color-3, 50%); }
+}
+
+
+@include min-screen(71.875em) {
+	.location-logo-link:hover,
+	.location-logo-link:focus {
+		opacity: .8;
+	}
+}
+

@@ -1,0 +1,21 @@
+
+/* ==========================================================================
+   Browser Happy
+   ========================================================================== */
+
+
+.browsehappy {
+  margin: 0;
+  padding: 2em 1em;
+  background: white;
+  color: inherit;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.browsehappy a{
+  text-decoration: underline;
+}

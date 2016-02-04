@@ -1,0 +1,24 @@
+
+/* ==========================================================================
+   Wrappers
+   ========================================================================== */
+
+.wrapper { padding-bottom: 2em; }
+
+.wrapper,
+.header-wrapper { width: 95%; }
+
+.header-wrapper { padding: 1em 0; }
+
+@include min-screen(62.5em) {
+	.header-wrapper { padding: 1.5em .5%; }	
+}
+
+
+
+
+.page-title {
+	margin-bottom: 1.5em;
+}
+
+

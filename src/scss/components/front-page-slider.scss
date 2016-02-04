@@ -1,0 +1,102 @@
+
+/* ==========================================================================
+   Home Page Slider
+   ========================================================================== */
+
+.flexslider { 
+  border: none; 
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-container { margin: 2%; }
+
+.slider-container {
+	max-height: 600px;
+  overflow: hidden;
+}
+
+.slider-aside { padding: 1em; }
+.slider-aside__title { 
+  padding-top: 1em; 
+  color: $color-7;
+}
+
+.tel-active { 
+	padding: 1em 1.5em; 
+	text-decoration: none;
+}
+.tel-read-only,
+.find-us-phone { display: none; }
+
+
+@include min-screen(37.5em) {
+	.hero-container { margin: .5%; }
+}
+
+
+.slider-aside { 
+    width: 100%;
+    background-color: $color-6;
+    text-align: center;
+}
+
+.slider-aside__child {
+  display: inline-block;
+  padding: 2em 0 1em 0;
+  vertical-align: middle;
+}
+
+@include min-screen(50em) {
+	.slider-aside__child {
+		padding: 2em 1.5em 2em 1.5em;	
+	}
+}
+
+@include min-screen(75em) {
+	.slider-container,
+  .slider-aside { float: left; }
+  .slider-aside__title { padding-top: .7em; }
+
+
+
+  .slider-container { 
+    width: 67.4%;
+    margin-bottom: .5%
+  }
+  .slider-aside { 
+    width: 32.6%;
+    margin-bottom: .5%;
+    max-height: 600px;
+    min-height: 600px;
+    position: relative;
+    margin-left: -1px;
+  }
+  
+  
+
+  .tel-active,
+  .find-us-mobile-phone { display: none; }
+  .tel-read-only { 
+    display: block; 
+    margin-top: .7em;
+  }
+
+  .find-us-phone { display: inline-block; }
+
+}

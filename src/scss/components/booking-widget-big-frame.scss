@@ -1,0 +1,49 @@
+
+/* ==========================================================================
+   Styles Booking Widget in Top Nav
+   ========================================================================== */
+
+
+#booking-widget-big-frame {
+
+	/* Overriding OpenTable style
+   ========================================================================== */
+	#OT_searchWrapperAll {
+		color: $color-3!important;
+		margin-top: 1em!important;
+		width: 80%!important;
+	}
+	
+
+
+	
+	#OT_defList dt {
+		font-family: 'PlantinMTStd-Regular';
+  	@include font-size(1.2);
+  	font-weight: 400;
+		letter-spacing: 2px;	
+	}
+
+
+	#OT_searchWrapperAll input[type="text"], 
+	#OT_searchWrapperAll select, 
+	#OT_searchWrapperAll option {
+		margin: 0 0 1.2em!important;
+		height: 40px;
+		border-color: $color-7;
+		font-family: 'PlantinMTStd-Regular';
+		@include font-size(1.6);
+		background-color: $color-8;
+	}
+
+	
+
+	.btn--new-submit {
+		padding: .5em 1.2em .4em;
+		background-color: $color-1;
+		color: $color-7;
+	}
+
+	
+
+}

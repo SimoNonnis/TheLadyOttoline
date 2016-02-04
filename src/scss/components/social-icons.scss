@@ -1,0 +1,19 @@
+
+/* ==========================================================================
+   Social Icons
+   ========================================================================== */
+
+.social-links a { display: inline-block; }
+
+.social-icons {
+	color: $color-7;
+	padding: .1em;
+	transition: .25s ease-out;
+}
+
+
+@include min-screen(62.5em) {
+	.social-links a:hover .social-icons {
+		color: darken($color-7, 10%); 
+	} 	
+}

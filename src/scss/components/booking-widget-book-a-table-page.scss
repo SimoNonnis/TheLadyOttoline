@@ -1,0 +1,75 @@
+
+/* ==========================================================================
+   Styles Booking Widget Booking Page
+   ========================================================================== */
+
+#booking-widget-book-a-table-page { margin-top: 3em; }
+
+#booking-widget-book-a-table-page {
+
+	/* Overriding OpenTable style
+   ========================================================================== */
+	#OT_searchWrapperAll {
+		color: $color-3!important;
+		margin: 0!important;
+		width: 95%!important;
+		padding: 0!important;
+		position: static!important;
+		min-height: 300px!important;
+	}
+	
+
+
+	
+	#OT_defList dt {
+		font-family: 'PlantinMTStd-Regular';
+  	@include font-size(1.2);
+  	font-weight: 400;
+		letter-spacing: 2px;	
+	}
+
+
+	#OT_searchWrapperAll input[type="text"], 
+	#OT_searchWrapperAll select, 
+	#OT_searchWrapperAll option {
+		margin: 0 0 1.2em!important;
+		height: 40px;
+		border-color: $color-7;
+		font-family: 'PlantinMTStd-Regular';
+		@include font-size(1.6);
+		background-color: $color-8;
+	}
+
+	
+
+	.btn--new-submit {
+		padding: .5em 1.2em .4em;
+		background-color: $color-6;
+		color: $color-7;
+	}
+
+	
+
+}
+
+
+
+
+@include min-screen(29.6875em) {
+	#booking-widget-book-a-table-page {
+		#OT_searchWrapperAll { width: 80%!important; }	
+	}
+}
+
+
+@include min-screen(37.5em) {
+	#booking-widget-book-a-table-page {
+		#OT_searchWrapperAll { width: 60%!important; }	
+	}
+}
+
+@include min-screen(71.875em) {
+	#booking-widget-book-a-table-page {
+		#OT_searchWrapperAll { width: 50%!important; }	
+	}
+}

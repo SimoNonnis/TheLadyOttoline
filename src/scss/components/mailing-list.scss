@@ -1,0 +1,147 @@
+
+/* ==========================================================================
+   Mailing List - NewsLetter
+   ========================================================================== */
+
+
+
+
+
+/* Mailing List Button on Footer
+   ========================================================================== */
+.footer-nav__e-newsletter {
+	margin: 1.6em;
+	width: 12.62em;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+Newsletter Form
+========================================================================== */
+
+.newsLetterModal {
+	z-index: -2!important;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	background: $color-1 url('../../images/grunge-overlay.png') repeat top left;
+
+	transition: opacity .5s;
+	-webkit-transition: .5s; //Needed in this sequence if not transition doesn't happen on close!!!
+}
+
+.js-newsLetterModal-isVisible {
+	opacity: 1!important;
+	z-index: 999!important;
+}
+
+.js-newsLetterModal-isVisible > .newsLetterContainer-outer {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999!important;
+	overflow-y: auto; // Allow Scroll only of Modal Window Content
+	position: fixed;	
+}
+
+.newsLetterContainer {
+	width: 100%;
+	position: relative;
+	outline: 0!important;
+	background-color: $color-6;
+	padding: 2em;
+	max-width: 500px;
+	margin: 4em auto;
+}
+
+
+
+
+
+.newsLetter__close {
+	cursor: pointer;
+	background-color: $color-8;
+	padding-left: .1em;
+	border: 0;
+	-webkit-appearance: none;
+	display: block;
+	outline: 0;
+	padding: 0;
+	padding-top: .1em;
+	padding-left: .1em;
+	box-shadow: none;
+	user-select: none;
+
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 20px;
+}
+
+
+
+
+/* Form Styles
+   ========================================================================== */
+
+.newsLetter__title {
+	margin-bottom: 1em;
+	padding-right: 2em;
+}
+
+.newsLetter__title span { white-space: nowrap; }
+
+
+.newsL__blok span { text-align: left; }
+
+.newsL__blok input {
+	width: 97%;
+	box-sizing: border-box !important;
+	margin: 0 0 12px !important;
+	line-height: 2;
+	height: 40px;
+	background-color: $color-8;
+	padding: 7px;
+	border: 1px solid $color-7;
+	border-radius: 0;
+	-webkit-appearance: none;
+	outline: none;
+}
+
+
+
+
+
+
+
+.newsL__blok--btn { margin-top: 12px; }
+.newsL__blok .btn--subscribe {
+	width: auto;
+	display: inline-block;
+	padding: .3em 1.5em;
+	text-transform: uppercase;
+	height: 48px;
+	transition: .25s ease-out;
+	background-color: $color-6;
+}
+
+
+
+
+
+

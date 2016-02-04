@@ -1,0 +1,146 @@
+
+/* ==========================================================================
+   Media Object brings to life blog, single article, carrers.
+   ========================================================================== */
+
+.media-obj {
+	padding: 1.5em 1em;
+	padding-bottom: 2em;
+	background-color: $color-8; 
+}
+
+.media-obj + .media-obj { margin-top: 2em; }
+
+.media-obj__img-div {
+	margin-right: 2em;
+	margin-bottom: 2em;
+}
+
+
+.media-obj__body {
+	overflow: hidden;
+}
+
+.media-obj-body__title a { text-decoration: none; }
+
+
+@include min-screen(43.75em) {
+	.media-obj__img-div { float: left; }
+}
+@include min-screen(81.25em) {
+	.media-obj { padding-right: 4em; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section and Sidebar
+   ========================================================================== */
+.sidebar-section { margin-bottom: 2em; }
+
+@include min-screen(62.5em) {
+	.blog-section { 
+		float: left; 
+		width: 75%;
+	}
+	.sidebar-section { 
+		float: right; 
+		width: 25%;
+		padding-left: 2em;
+	}
+}
+
+
+
+.sidebar-section ul { margin-top: 1em; }
+
+.sidebar-section a {
+	display: inline-block;
+	padding: .3em 0; 
+	text-decoration: none;
+	text-transform: capitalize; 
+}
+
+.sidebar-categories__ul .current-cat a,
+.sidebar-section a:hover { text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+
+/* Sidebar
+   ========================================================================== */
+.sidebar--skin {
+	padding: 1.5em 1em;
+	//background-color: $color-8;
+	//box-shadow: inset 0 0 1px 1px $color-9; 
+}
+
+.sidebar--skin + .sidebar--skin { margin-top: 2em; }
+
+
+@include screen(40.625em, 62.5em) {
+	.sidebar--skin { 
+		float: left;
+		width: 48%;
+	}	
+
+	.sidebar--skin + .sidebar--skin { 
+		margin-top: 0;
+		margin-left: 4%; }
+}
+
+
+
+
+
+
+
+/* TinyNav
+   ========================================================================== */
+.tinynav { 
+	margin-top: 1em; 
+	width: 100%;
+	height: 35px;
+	background-color: $color-8;
+	padding: 7px;
+	border: 1px solid $color-7;
+	border-radius: 0;
+	-webkit-appearance: none;
+	font-size: 16px;
+}
+
+/* Showing select in narrow screens and hidding them in big screens
+   ========================================================================== */
+.sidebar-section ul { display: none; }
+
+
+@include min-screen(62.5em) {
+	.sidebar-section ul { display: block; }	
+	.tinynav { display: none; }	
+}
+
+
+
+
+
+
+
+
+
+

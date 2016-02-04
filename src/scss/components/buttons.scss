@@ -1,0 +1,85 @@
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+  margin-top: 2em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button-gold {
+	color: $color-7;
+	padding: .4em 1.5em .5em;
+  transition: .25s ease-out;
+}
+
+
+
+.button-dark {
+	border-color: $color-7;
+	padding: .5em 1.5em .4em;
+  transition: .25s ease-out;
+  color: $color-7;
+}
+
+
+.button-light {
+  border-color: $color-6;
+  padding: .5em 1.5em .4em;
+  transition: .25s ease-out;
+}
+
+
+
+.borderDouble {
+  border-width: 3px !important;
+  border-style: double !important;
+}
+
+
+.btn--topSection { margin-top: 3em; }
+.btn--pdf { margin-top: 3em; }
+
+.home-page-read-more { padding: .4em 1.5em; }
+
+
+/* Single Blog post - position CTA & back buttons
+========================================================================== */
+.btn--back-to {
+  font-family: 'PlantinMTStd-Regular', serif; 
+  font-weight: 400;
+  text-transform: capitalize;
+  padding-left: 0;
+}
+
+@include min-screen(24.3125em) {
+  .btn--back-to { padding-left: 1.5em; }
+}
+
+
+
+
+
+
+
+@include min-screen(62.5em) {
+  .button-gold:hover {
+    color: $color-6;
+    background-color: $color-7;
+    border-color: $color-6;
+  }
+
+  .button-dark:hover,
+  #booking-widget-big-frame .btn--new-submit:hover,
+  #booking-widget-small-frame .btn--new-submit:hover,
+  #booking-widget-book-a-table-page .btn--new-submit:hover {
+    border-color: $color-6;
+    color: $color-6;
+    background-color: $color-7;
+  }
+
+  .btn--back-to { margin-left: 2em; }
+
+}

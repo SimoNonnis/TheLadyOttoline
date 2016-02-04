@@ -1,0 +1,179 @@
+
+/* ==========================================================================
+   Boxes
+   ========================================================================== */
+
+.cover {
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-element { margin: 2%; }
+
+.magicBox {
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.magicBox > * {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.magicBox-overlay {
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+.magicBox-overlay.lastBlogPost { cursor: default; }
+.lastBlogPost__title { text-decoration: none; }
+
+.magicBox-overlay.magicBox--light,
+.magicBox-overlay.magicBox--dark { color: $color-3; }
+
+.magicBox-overlay__black { background-color: rgba(58, 63, 62, 0.4); }
+
+
+
+.magicBox--light { background-color: $color-6; }
+.magicBox--dark { background-color: $color-1; } 
+.magicBox--dark1 { background-color: $color-8; }
+
+
+
+
+
+
+
+
+
+.lotOfCopy {
+  padding: 12%;
+}
+
+.magicBox__title { 
+	margin-top: 0; 
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.magicBox__title--no-shadow { text-shadow: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//shift from 1 column to 2 
+@include min-screen(37.5em) {
+  .grid-element {
+    float: left;
+    width: 49%;
+    margin: .5%;
+  }
+  
+  //Shape
+  .magicBox { padding-bottom: 55%; }
+}
+
+
+
+
+//shift from 2 columns to 3
+@include min-screen(62.5em) {
+  .grid-element {
+    float: left;
+    width: 32.3%;
+  }
+  
+  //Shape
+  .magicBox { padding-bottom: 35%; }
+  
+  .lastBlogPostBox {
+    margin-right: 0;
+    width: 33.3%;
+  }
+  
+  .lastBlogPostBoxImage { margin-left: 0; }
+  
+  .bookingWidgetBox {
+    margin-left: 0;
+    width: 33.3%; 
+  }
+  
+  .bookingWidgetBoxImage { margin-right: 0; }
+}
+
+@include min-screen(75em) {
+  //Shape
+  .magicBox { padding-bottom: 29%; }
+  
+  .fancy-zoom { transition: .7s; } 
+  .fancy-zoom:hover,
+  .magicBox--fancy-zoom:hover > .fancy-zoom { 
+    transform: scale(1.2); 
+  }
+}
+
+
+
+
+
+@include min-screen(62.5em) {
+  .desktop-hidden { display: none; }
+}
+
+
+
+@include max-screen(62.4375em) {
+  .lap-mob-hidden { display: none; }  
+}
+
+@include max-screen(37.4375em) {
+  .mob-hidden { display: none; }  
+} 
+
+
+
+
+
+/* Home Page - Blog post style square
+   ========================================================================== */
+.lotOfCopy--homeBlogPost { padding: 5%; }
+
+
+
+/* About Group square background positioning
+   ========================================================================== */ 
+.aboutBox-bkg {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+@include screen(62.5em, 71.875em) {
+  .aboutBox-bkg .lotOfCopy { padding: 7%; } 
+
+}
+
+
+
+

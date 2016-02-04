@@ -1,0 +1,163 @@
+
+/* =====================
+   Global Rules
+   ===================*/
+
+
+/* Normalize Margins
+   ========================================================================== */
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 1em 0 0 0;
+}
+
+p { margin-top: 1.5em; }
+
+
+/* Box-Sizing
+   ========================================================================== */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+
+
+
+
+
+
+
+
+/* Selected text
+   ========================================================================== */
+::selection {
+  background: #daecec;
+  color: inherit;
+  text-shadow: none;
+}
+
+
+
+/* html
+   ========================================================================== */
+html { 
+  background: $color-1 url('../../images/grunge-overlay.png') repeat top left;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+
+/* Body
+   ========================================================================== */
+body { 
+  //background-color: $color-1;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+
+
+
+
+
+
+/* Images
+   ========================================================================== */
+img { 
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+
+
+
+/* Links
+   ========================================================================== */
+a {  
+  font-style: normal;
+  color: inherit;
+  transition: .25s ease-out;
+}
+
+a:hover,
+a:focus,
+a:active { 
+  text-decoration: none; 
+  cursor:pointer;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+a:focus { outline: none; }
+
+
+
+
+/* WP Classes for Images embedded in blog posts
+   ========================================================================== */
+.aligncenter {
+  width: auto!important;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.aligncenter,
+.alignleft,
+.alignright {
+  margin-bottom: 1em;
+}
+
+.aligncenter img {
+  width: auto;
+  height: auto;
+}
+
+.wp-caption-text { padding: .5em; }
+
+
+
+/* Full Height
+   ========================================================================== */
+.full-height {
+  height: 100%;
+  min-height: 100%;
+}
+
+.max-width { max-width: $max-width; }
+
+
+
+
+
+
+/* Applied via Javascript to the HTML tag
+   ========================================================================== */
+.overFlowHidden,
+.bookingModalOverFlowHidden,
+.newsletterModalOverFlowHidden,
+.eventEnquiryModalOverFlowHidden { overflow:hidden }
+
+
+
+
+
+/* Paragraph with padding bottom
+   ========================================================================== */
+.p-with-padding-bottom { padding-bottom: 3em; }
+
+
+
+

@@ -1,0 +1,118 @@
+
+/* ==========================================================================
+   Rectangles
+   ========================================================================== */
+
+.grid-element--rect { margin: 2%; }
+
+
+.magicBox--rectCopy { padding-bottom: 190%; }
+
+@include min-screen(28.125em) {
+	.magicBox--rectCopy { padding-bottom: 100%; }
+}
+
+@include min-screen(37.5em) {
+	.magicBox--rectCopy { padding-bottom: 55%; }
+}
+
+@include min-screen(62.5em) {
+	.magicBox--rectCopy { padding-bottom: 35%; }
+}
+
+@include min-screen(75em) {
+	.magicBox--rectCopy { padding-bottom: 29%; }
+}
+
+
+
+.magicBox--rectCopy1 { padding-bottom: 270%; }
+
+@include min-screen(24.375em) {
+	.magicBox--rectCopy1 { padding-bottom: 190%; }	
+}
+
+@include min-screen(29.375em) {
+	.magicBox--rectCopy1 { padding-bottom: 120%; }	
+}
+
+@include min-screen(33.75em) {
+	.magicBox--rectCopy1 { padding-bottom: 97%; }	
+}
+
+@include min-screen(37.5em) {
+	.magicBox--rectCopy1 { padding-bottom: 87%; }	
+}
+
+@include min-screen(44.6875em) {
+	.magicBox--rectCopy1 { padding-bottom: 75%; }	
+}
+
+@include min-screen(50em) {
+	.magicBox--rectCopy1 { padding-bottom: 55%; }	
+}
+
+@include min-screen(62.5em) {
+	.magicBox--rectCopy1 { padding-bottom: 35%; }	
+}
+
+@include min-screen(75em) {
+	.magicBox--rectCopy1 { padding-bottom: 29%; }	
+}
+
+
+
+
+
+//shift from 1 column to 2 
+@include min-screen(37.5em) {
+
+
+  .grid-element--rect {
+    float: left;
+    margin: .5%;
+    width: 99%;
+  }
+  
+
+}
+
+//shift from 2 columns to 3
+@include min-screen(62.5em) {
+
+
+  .grid-element--rect {
+    
+    width: 65.5%;
+  }
+
+}
+
+
+
+
+
+
+/* Copy Box
+   ========================================================================== */
+.rect-copy-wrapper {
+	padding: 2em;
+	padding-top: 2.5em;
+}
+
+
+
+
+/* Copy Column
+   ========================================================================== */
+@include min-screen(50em) {
+	.column {
+		margin-top: 0;
+		width: 50%;
+		float: left;
+	}
+
+	.column-left { padding-right: 1em; }
+	.column-right { padding-left: 1em; }
+}
+

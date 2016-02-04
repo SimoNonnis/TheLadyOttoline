@@ -1,0 +1,90 @@
+
+/* ==========================================================================
+   Gallery page + Children
+   ========================================================================== */
+
+
+
+
+
+/* Navigation Top Section
+   ========================================================================== */
+.gallery-navigation-div {
+	background-color: $color-6;
+	padding: 2.5em 1em;
+	margin: .3em;
+}
+
+.gallery-cat-links-ul  a { 
+	text-decoration: none;
+	display: inline-block;
+	text-transform: capitalize;
+	border-bottom: 2px solid transparent;
+	padding: .5em .5em .2em;
+	margin: .3em;
+}
+
+.gallery-cat-links-ul .current_page_item a { border-color: $color-7;	}
+
+
+
+
+@include min-screen(29.6875em) {
+	.gallery-cat-links-ul > li {
+		display: inline-block;
+		vertical-align: middle; 
+	}
+	
+}
+
+@include min-screen(62.5em) {
+	.gallery-cat-links-ul  a:hover,
+	.gallery-cat-links-ul  a:focus {
+		border-color: $color-7;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Images Section
+   ========================================================================== */
+.gallery-div > a {
+	display: inline-block;
+	vertical-align: middle;
+	padding: .3em;
+}
+
+
+//2 columns
+@include min-screen(29.6875em) {
+	.gallery-div > a { 
+		float: left;
+		padding: .3em; 
+		width: 50%;
+	}	
+}
+
+
+//3 columns
+@include min-screen(29.6875em) {
+	.gallery-div > a { width: 33.333%; }	
+}
+
+
+//Hover Effect at 1200px
+@include min-screen(75em) {
+	.gallery-div > a img { transition: .7s; }
+	.gallery-div > a:hover img {  
+		filter: brightness(1.1);
+		opacity: .7; 
+	}	
+}
+

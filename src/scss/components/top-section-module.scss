@@ -1,0 +1,57 @@
+
+
+/* ========================================================================== 
+   Top Section Module
+   ========================================================================== */ 
+.top-section-wrapper { margin: 2%; }
+
+.top-section {
+	padding: 3em 1em; 
+}
+
+.top-section--skin { background-color: $color-6; }
+.top-section--bkg {
+	background-repeat: no-repeat;
+	background-position: 97% 96%;
+}
+
+.img-top-section { display: none; }
+
+
+
+@include max-screen(38.4375em) {
+	.top-section--bkg-findUs { background-image: none!important; }
+}
+
+
+@include min-screen(28.125em) {
+	.top-section {
+		padding: 3em 2em; 
+	}
+}
+
+@include min-screen(37.5em) {
+	.top-section-wrapper { margin: .5%; }
+}
+
+
+
+
+@include min-screen(53.125em) {
+	.img-top-section { 
+		display: table-cell;
+		width: 32.6%;
+
+		background-position: top center; 
+	}	
+}
+
+
+@include min-screen(65.625em) {
+	.top-section { padding-right: 3em; }
+}
+
+@include min-screen(75em) {
+	.top-section { padding-right: 6em; }
+}
+
