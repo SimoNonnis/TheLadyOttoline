@@ -5,11 +5,6 @@ TheLadyOttoline
 WordPress theme for TheLadyOttoline
 
 
-
-
-Website Plugin List
-===================
-
 = PLUGINS
 
 
